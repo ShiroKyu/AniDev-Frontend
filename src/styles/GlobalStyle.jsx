@@ -12,8 +12,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-      width: 100vw;
-      height: 100vh;
+    width: 100vw;
+    height: 100vh;
       /* background: linear-gradient(90deg, #9a2626, #460941); */
+    overflow-X: hidden;
   }
 `;

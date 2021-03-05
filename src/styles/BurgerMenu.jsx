@@ -8,9 +8,10 @@ export const styles = {
     height: '30px',
     left: '36px',
     top: '36px',
+    outline: 'none',
   },
   bmBurgerBars: {
-    background: '#373a47',
+    background: '#9b9494',
   },
   bmBurgerBarsHover: {
     background: '#a90000',
