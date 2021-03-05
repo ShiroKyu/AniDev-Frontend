@@ -12,6 +12,6 @@ export const sliderData = [
   {
     tag: 'Anime',
     image: '/img/banner3.jpg',
-    name: 'Re:Zero',
+    name: 'Re:Zero 2',
   },
 ];

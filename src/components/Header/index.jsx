@@ -15,15 +15,19 @@ export default function Header() {
   const [slide, setSlide] = useState(0);
   const len = sliderData.length;
 
+  let autoSlide = '';
+
   function handleRightClick() {
+    clearInterval(autoSlide);
     setSlide(slide === len - 1 ? 0 : slide + 1);
   }
 
   function handleLeftClick() {
+    clearInterval(autoSlide);
     setSlide(slide === 0 ? len - 1 : slide - 1);
   }
 
-  setTimeout(handleRightClick, 10000);
+  autoSlide = setInterval(handleRightClick, 10000);
 
   return (
     <Slider>
