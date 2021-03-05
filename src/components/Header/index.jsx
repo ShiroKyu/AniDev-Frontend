@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FiPlusCircle } from 'react-icons/fi';
 
 import {
   Slider,
@@ -32,9 +33,21 @@ export default function Header() {
           className={slide === index ? 'slide active' : 'slide notActive'}
         >
           <AnimeInfo>
-            <h3>{data.tag}</h3>
-            <h1>{data.name}</h1>
-            <p>Saiba mais</p>
+            <div>
+              <h3>{data.tag}</h3>
+              <h1>{data.name}</h1>
+              <p>
+                <FiPlusCircle
+                  style={{
+                    margin: '0 0.5rem',
+                    width: '20px',
+                    height: '30px',
+                    cursor: 'pointer',
+                  }}
+                />
+                Saiba mais
+              </p>
+            </div>
           </AnimeInfo>
 
           <AnimeBanner animeBanner={data.image} />
